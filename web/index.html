@@ -9,7 +9,11 @@
     <link rel="preload" href="assets/titanfall.ttf" as="font">
 
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/header.css">
     <link rel="shortcut icon" href="assets/favicon-32.png" type="image/png">
+
+    <link rel="stylesheet" href="assets/fa/css/font-awesome.min.css">
+
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Northstar">
@@ -32,8 +36,12 @@
 <body>
     <div id="top">
         <div id="toplinks">
+            <a class="top-link" href="/">Home</a>
+            <div class="spacer"></div>
+            <a class="top-link" href="/credits">Contributors</a>
             <a class="top-link" href="/thunderstore">Mods</a>
             <a class="top-link" href="/wiki">Wiki</a>
+            <a class="top-link" href="/moddingdocs">Modding Docs</a>
             <a class="top-link" href="/github">GitHub</a>
         </div>
     </div>
@@ -46,8 +54,8 @@
         </div>
         <div id="mainbuttons">
             <p class="northstardescription">A <span class="tffont">TITANFALL<span class="tfdivider"></span> 2</span> modding and custom server framework</p>
-            <a ondragstart="return false;" href="https://github.com/R2Northstar/Northstar/releases/latest" class="big-button download" download><img src="assets/icon_download.svg" alt="Download Northstar"/><span>DOWNLOAD</span></a>
-            <a ondragstart="return false;" href="/discord" target="_blank" class="big-button"><img src="assets/icon_discord.svg" alt="Discord Server"/><span>DISCORD</span></a>
+            <a ondragstart="return false;" href="https://github.com/R2Northstar/Northstar/releases/latest" class="button download" download><img src="assets/manual.png" alt="Download Northstar"/><span>DOWNLOAD</span></a>
+            <a ondragstart="return false;" href="/discord" target="_blank" class="button"><img src="assets/icon_discord.svg" alt="Discord Server"/><span>DISCORD</span></a>
         </div>
     </div>
     <div class="pane">
@@ -57,7 +65,7 @@
             <div class="launcher">
                 <div class="header"> 
                     <img src="assets/flightcore.png">
-                    <a class="name header">FlightCore</a>
+                    <div class="name header">FlightCore</div>
                 </div>
                 <div class="blurb">
                     Gecko didn't give me a text blurb so im just putting random text here to pad this section.
@@ -69,22 +77,8 @@
             </div>
             <div class="launcher">
                 <div class="header"> 
-                    <img src="assets/r2mm.png">
-                    <a class="name header">R2ModMan</a>
-                </div>
-                <div class="blurb">
-                    General mod-manager for multiple games including Titanfall|2+Northstar. Allows for separate profiles to keep your game install folder clean. Features mod-manager and built-in mod browser for Thunderstore.
-                    </p>Supports Windows and Linux
-                </div>
-                <div class="buttons">
-                    <a ondragstart="return false;" href="https://northstar.thunderstore.io/package/ebkr/r2modman/" target="_blank" class="button"><img src="assets/manual.png" /><span>Download</span></a>
-                    <a ondragstart="return false;" href="https://github.com/ebkr/r2modmanPlus" target="_blank" class="button"><img src="assets/github.png" /><span>Github</span></a>
-                </div>
-            </div>
-            <div class="launcher">
-                <div class="header"> 
                     <img src="assets/viper.png">
-                    <a class="name header">Viper</a>
+                    <div class="name header">Viper</div>
                 </div>
                 <div class="blurb">
                     Simple and easy to use Northstar installer and auto-updater. Allows launching both Northstar and vanilla Titanfall 2. Features mod-manager and built-in mod browser for Thunderstore.
@@ -98,10 +92,10 @@
             <div class="launcher">
                 <div class="header"> 
                     <img src="assets/vtol.png">
-                    <a class="name header">VTOL</a>
+                    <div class="name header">VTOL</div>
                 </div>
                 <div class="blurb">
-                    Easy to use and extensive Northstar installer and mod-manager. Supports installing from Thunderstore as well as from outside sources like GitHub/GitLab repositories. Has support for installing custom weapon/pilot skins. Features manager for setting up dedicated servers.
+                    Easy to use and extensive Northstar installer and mod-manager. Supports installing from Thunderstore as well as from outside sources like GitHub/GitLab. Supports installing custom weapon/pilot skins and managing dedicated servers.
                     </p>Supports Windows.
                 </div>
                 <div class="buttons">
@@ -112,36 +106,33 @@
             <div class="launcher">
                 <div class="header"> 
                     <img src="assets/manual.png">
-                    <a class="name header">Manual</a>
+                    <div class="name header">Manual</div>
                 </div>
                 <div class="blurb">
                     You may also choose to install Northstar manually. Note that Northstar does not automatically update when installed this way.
                 </div>
                 <div class="buttons">
-                    <a ondragstart="return false;" href="https://northstar.thunderstore.io/package/ebkr/r2modman/" target="_blank" class="button"><img src="assets/manual.png" /><span>Download</span></a>
+                    <a ondragstart="return false;" href="https://github.com/R2Northstar/Northstar/releases/latest" target="_blank" class="button"><img src="assets/manual.png" /><span>Download</span></a>
+                    <a ondragstart="return false;" href="https://r2northstar.gitbook.io/r2northstar-wiki/installing-northstar/manual-installation" target="_blank" class="button"><img src="assets/icon_wiki.svg"/><span>Guide</span></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="pane">
-        <h1>Help</h1>
-        <p>If you're having issues with running or setting up the Northstar client or are thinking of running a dedicated server you can find help and troubleshooting tips on the wiki and the Discord server:</p>
-        <a ondragstart="return false;" href="/wiki" class="big-button"><img src="assets/icon_wiki.svg" alt="Northstar Wiki"/><span>WIKI</span></a>
-        <a ondragstart="return false;" href="/discord" target="_blank" class="big-button"><img src="assets/icon_discord.svg" alt="Discord Server"/><span>DISCORD</span></a>
-    </div>
-    <div class="pane">
-        <h1>Modding Docs</h1>
-        <p>If you're interested in making mods for northstar you can find the docs here:</p>
-        <a ondragstart="return false;" href="https://r2northstar.readthedocs.io/" class="big-button"><img src="assets/icon_moddingdocs.svg" alt="Modding Documentation"/><span>NORTHSTAR MODDING DOCS</span></a>
+        <div class="section">Support</div>
+        <p style="text-align: center">If you're having issues with running or setting up the Northstar client or are thinking of running a dedicated server you can find help and troubleshooting tips on the wiki and the Discord server:</p>
+        <div class="center">
+            <a ondragstart="return false;" href="/wiki" class="button"><img src="assets/icon_wiki.svg" alt="Northstar Wiki"/><span>Wiki</span></a>
+            <a ondragstart="return false;" href="/discord" target="_blank" class="button"><img src="assets/icon_discord.svg" alt="Discord Server"/><span>Discord</span></a>
+            <a ondragstart="return false;" href="https://r2northstar.readthedocs.io/" class="button"><img src="assets/icon_moddingdocs.svg" alt="Modding Documentation"/><span>Northstar Modding Docs</span></a>
+        </div>
     </div>
     <br style="font-size: 32px;">
-    <div class="footer pane" style="background-color: rgb(33, 43, 78); line-height: 1.5;">
-        <a class="download" href="https://github.com/R2Northstar/Northstar/releases/latest">Download</a>
-        <a href="/wiki">Wiki</a>
-        <a href="/github">GitHub</a>
-        <a href="https://r2northstar.readthedocs.io/">Modding Docs</a>
-        <a href="/discord">Discord</a>
-        <a href="https://twitter.com/bobthebobthebo3" style="font-size: 10px; opacity: 0.1; margin-top: 6px;">big man</a>
+    <div class="footer pane" style="background-color: rgb(33, 43, 78);">
+        <a href="/wiki"><img src="assets/icon_wiki.svg" alt="Northstar Wiki"/>Wiki</a>
+        <a href="/github"><img src="assets/github.png" alt="Modding Documentation"/>GitHub</a>
+        <a href="https://r2northstar.readthedocs.io/"><img src="assets/icon_moddingdocs.svg" alt="Modding Documentation"/>Modding Docs</a>
+        <a href="/discord"><img src="assets/icon_discord.svg" alt="Discord Server"/>Discord</a>
     </div>
     <script src="script/index.js"></script>
 </body>

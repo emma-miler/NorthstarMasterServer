@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Titanfall;
+    src: url('/assets/titanfall.ttf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -184,14 +189,14 @@ a.big-button > img {
 }
 
 .pane > .section {
-    font-family: Titanfall;
+    /* font-family: Titanfall; */
     font-weight: 900;
     font-size: 48px;
     margin: 0;
     width: 100vw;
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 0.7em;
+    margin-top: -1em;
+    margin-bottom: 1em;
 }
 
 a {
@@ -244,28 +249,60 @@ code {
     font-family: Titanfall, Arial, Helvetica, sans-serif;
 }
 
-.installoptions { 
+.contributors { 
     display: flex;
     justify-content: center;
     width: 90%;
     margin-left: 5%;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.launcher {
-    margin: 2%;
-    width: 20%;
-    margin: 0px 1% 0px 1%;
+.coreuser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    padding: 0px;
+    font-size: 0.9em;
+    max-width: 8vw;
 }
 
-.launcher > * > img {
-    height: 4em;
-    width: 4em;
+@media screen and (max-width: 1280px) {
+    .coreuser {
+        max-width: 13vw;
+    }
+}
+
+.small > .coreuser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+}
+
+.coreuser > img {
+    height: 6em;
+    width: 6em;
+    align-self: center;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.small > * > img {
+    height: 5em;
+    width: 5em;
+    align-self: center;
+    border-radius: 100%;
 }
 
 .header {
     display: flex;
     padding-top: 0.5em;
-    padding-bottom: 1em;
+    padding-bottom: 0.2em;
+    flex-direction: row;
 }
 
 .name {
@@ -276,13 +313,16 @@ code {
 
 .blurb {
     padding-bottom: 1em;
-    min-height: 11em;
+    text-align: center;
+    color: #999;
+    text-overflow: wrap;
+    height: 3em;
 }
 
 @media screen and (max-width: 1280px) {
-    .launcher > .blurb {
+    .coreuser > .blurb {
         padding-bottom: 1em;
-        min-height: 14em;
+        min-height: 5em;
     }
 }
 
@@ -309,7 +349,7 @@ code {
     text-align: center;
 }
 
-.launcher > * > .button {
+.coreuser > * > .button {
     width: 100%;
 }
 
